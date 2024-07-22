@@ -22,12 +22,12 @@ dependencies {
     val confluentVersion: String by project
     testImplementation(group = "io.confluent", name = "kafka-protobuf-provider", version = confluentVersion)
     testImplementation(group = "io.confluent", name = "kafka-streams-protobuf-serde", version = confluentVersion)
-    testImplementation(group = "com.google.protobuf", name = "protobuf-java", version = "3.21.12")
+    testImplementation(group = "com.google.protobuf", name = "protobuf-java", version = "3.25.1")
 }
 
 protobuf {
     protoc {
         // The artifact spec for the Protobuf Compiler
-        artifact = "com.google.protobuf:protoc:3.21.12"
+        artifact = "com.google.protobuf:protoc:3.25.1"
     }
 }

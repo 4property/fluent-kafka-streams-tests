@@ -3,7 +3,7 @@ plugins {
     id("com.bakdata.release") version "1.4.0"
     id("com.bakdata.sonar") version "1.4.0"
     id("com.bakdata.sonatype") version "1.4.1"
-    id("io.freefair.lombok") version "8.4" apply false
+    id("io.freefair.lombok") version "8.6" apply false
 }
 
 allprojects {
@@ -46,7 +46,7 @@ subprojects {
     apply(plugin = "io.freefair.lombok")
     configure<JavaPluginExtension> {
         toolchain {
-            languageVersion = JavaLanguageVersion.of(11)
+            languageVersion = JavaLanguageVersion.of(21)
         }
     }
 
